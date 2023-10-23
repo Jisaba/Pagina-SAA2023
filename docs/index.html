@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- ############################ HEAD ################################################  -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Bootstrap</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- ######################## Bootstrap ############################################  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+  <!-- ############################ BODY ################################################  -->
+  <body>
+    <!-- #################################### Header #################################### -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img loading="lazy" id="logo-header" src="http://drive.google.com/uc?export=view&id=1v1aGA9lwZqA01R0-ZmLMJc7l98kWBLn_" alt="Logos institucionales"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Secciones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul id="list-secciones" class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#presentacion">Presentación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#objetivo">Objetivo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#forma-trabajo">Forma de trabajo</a>
+                </li>
+                
+                  <li class="nav-item dropdown">
+                    <a style="display: inline-block;" class="nav-link" href="#sesiones">Sesiones</a>
+                    <a style="display: inline-block;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul id="list-sesiones" class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#programacion">Sesión 1</a></li>
+                      <li><a class="dropdown-item" href="#programacion">Sesión 2</a></li>
+                      <li><a class="dropdown-item" href="#programacion">Sesión 3</a></li>
+                      <li><a class="dropdown-item" href="#programacion">Sesión 4</a></li>
+                      <li><a class="dropdown-item" href="#programacion">Sesión 5</a></li>
+                      <li><a class="dropdown-item" href="#programacion">Sesión 6</a></li>
+                      <li><a class="dropdown-item" href="#programacion">Sesión 7</a></li>
+                    </ul>
+                  </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#trabajo-final">Trabajo final</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#responsables">Responsables</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ##################################### Main ##################################### -->
+    <main>
+      <div class="container">
+        <!-- ********************************** Portada ********************************** -->
+        <div id="portada" class="row seccion">
+          <h1>Enseñanza para el aprendizaje autónomo</h1>
+          <div class="col">
+            <img loading="lazy" id="saa" class="img-fluid" src="http://drive.google.com/uc?export=view&id=15wadJ_KblM7SzO_oFqjPdkgg67b416Sm" alt="Logo seminario">
+            <img loading="lazy" id="fondo" class="img-fluid" src="http://drive.google.com/uc?export=view&id=1_uTk-W4qDiaQSlDhSmRQb78GPQPD_NQU" alt="Imagen de portada">
+          </div>
+        </div>
+        <!-- ******************************* Presentación ******************************* -->
+        <div id="presentacion" class="row seccion">
+          <div class="col-1"></div>
+          <div class="col">
+            <h2>Presentación</h2>
+            <p>El aprendizaje autónomo requiere de espacios de estudio alrededor de estrategias y métodos de enseñanza que ayuden, tanto a profesores como a alumnos, a trabajar en el desarrollo de las competencias que se requieren para ser mejores estudiantes en general.</p>
+            <p>Bajo esta perspectiva se implementó el Seminario de Aprendizaje Autónomo desde 2016, abordando no sólo el estudio del concepto, sus dimensiones, sino también los retos y tendencias que se presentan en términos del trabajo en la educación superior, especialmente en sistemas abiertos y a distancia. En esta emisión, en particular se trabajará en el diseño de intervenciones docentes para impulsar espacios de aprendizaje donde se privilegie la autonomía, mismos que posteriormente podrán ser evaluados.</p>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- ********************************* Objetivo ********************************* -->
+        <div id="objetivo" class="row seccion">
+          <div class="col-1"></div>
+          <div class="col">
+            <h2>Objetivo</h2>
+            <p>Realizar una propuesta de intervención en la enseñanza para fortalecer el aprendizaje autónomo.</p>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- ***************************** Forma de trabajo ***************************** -->
+        <div id="forma-trabajo" class="row seccion">
+          <div class="col-1"></div>
+          <div class="col">
+            <h2>Forma de trabajo</h2>
+            <p>Las sesiones serán mensuales, con dos horas de duración. La primera hora y media será para el debate y la reflexión del tema trabajado a lo largo del mes, la última media hora se utilizará para dar la introducción al tema siguiente.</p>
+            <p>El Seminario se ofrece en una modalidad en línea, bajo el siguiente esquema de trabajo:</p>
+            <ul>
+              <li>Se utilizará un sitio web en el que se publicarán los materiales para trabajar durante el mes y que ayudarán a preparar, de manera progresiva, el diseño de la intervención docente.</li>
+              <li>Vía streaming utilizando Zoom, se realizará una sesión mensual de presentaciones y debate, retomando los trabajos realizados a lo largo del mes.</li>
+              <li>La asistencia es libre y abierta. Para recibir constancia de participación (50 horas) se deberá contar con el 80% de asistencia y entregar un producto final que consistirá en el desarrollo completo de una propuesta de intervención que integre los puntos revisados durante el seminario. El seminario no tiene costo.</li>
+              <li>La presentación se hará en diferentes formatos.</li>
+            </ul>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- ********************************* Sesiones ********************************* -->
+        <div id="sesiones" class="row seccion">
+          <div class="col-1"></div>
+          <div class="col">
+            <h2>Sesiones</h2>
+            <p>Las sesiones del seminario serán mensuales, se realizarán los días programados en el calendario, de 12:00 a 14:00 hrs. La discusión partirá de las presentaciones correspondientes a los rubros que deben de considerarse para el diseño de la intervención, por cada participante.Los participantes podrán preparar sus presentaciones a partir de los materiales seleccionados para cada tema y publicados en el sitio web del seminario y de otras fuentes. Además, podrán trabajar en equipo, si así lo desean.</p>
+            <p>Para esta actividad utilizaremos la herramienta Zoom, se le enviará por correo electrónico la dirección para ingresar a la videoconferencia.</p>
+            <p class="ultimo-p">El seminario se ofrece en una modalidad en línea por lo que en este sitio web se colocarán las lecturas para trabajar durante el mes preparando los argumentos para discutir la tesis correspondiente al tema y dimensión.</p>
+            <h3 id="programacion" class="text-center">Programación</h3>
+            <div class="accordion" id="accordionSesiones">
+              <div id="sesion-1" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fila" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div>Sesión 1</div>
+                    <div>Inicio</div>
+                    <div>26 de Mayo</div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Durante la 1era. sesión del Seminario, hemos presentado dado una introducción al tema de estudio de esta emisión, así como las características del trabajo que realizaremos a lo largo del seminario. A continuación se encuentra el video de la sesión, así como algunos recursos de utilidad.</p>
+                    <iframe class="yt-video" src="https://www.youtube-nocookie.com/embed/MVJ_yw8-XE4?si=lg40wJcZsWPedTZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p><a href="https://drive.google.com/file/d/1c7fCSTzYqz-4ZiZ0caMden8DMdWwkH_N/view">Vínculo a lectura</a> sobre el docente autónomo y su relación con el estudiante autónomo.</p>
+                    <iframe class="doc-pdf" src="https://drive.google.com/file/d/1CEBHT-enE0JpzHs70Ef_u3FWgfbYTIVc/preview" allow="autoplay"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div id="sesion-2" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fila" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div>Sesión 2</div>
+                    <div>Marco teórico-conceptual</div>
+                    <div>30 de Junio</div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Durante la 2a. sesión del Seminario, hemos discutido sobre los conceptos de Enseñanza y Autonomía, así como la vinculación de ambos para conformar la idea de un docente autónomo.  A continuación se encuentra el video de la sesión.</p>
+                    <iframe class="yt-video" src="https://www.youtube-nocookie.com/embed/Bi1WbB0K4W8?si=9aN2C8wezNgBKEMq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="doc-pdf" src="https://drive.google.com/file/d/1qSfFwQo8D1NcDEAq5-KYnlWmheHuINSQ/preview" allow="autoplay"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div id="sesion-3" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fila" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div>Sesión 3</div>
+                    <div>Necesidad o problemática (FODA)</div>
+                    <div>25 de Agosto</div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Durante la 3a. sesión del Seminario, hemos revisado el análisis FODA que han realizado de tal manera que se pueda identificar un problema real y factible de solucionar.  A continuación se encuentra el video de la sesión.</p>
+                    <iframe class="yt-video" src="https://www.youtube-nocookie.com/embed/fppf-XG7CE4?si=NvpeEIatPz79gsQ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Lecturas de apoyo</p>
+                    <p>Benson, P. (2006). <a href="https://www.academia.edu/2249383/State_of_the_art_article">State of the art article. Autonomy and language teaching and learning</a>.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="sesion-4" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fila" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div>Sesión 4</div>
+                    <div>Análisis de diseño</div>
+                    <div>29 de Septiembre</div>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>En la sesión 4 del seminario de aprendizaje autónomo estuvimos revisando los aspectos que se rescataron del análisis FODA y que son la base para el diseño de la intervención didáctica. El video de la sesión se presenta a continuación.</p>
+                    <iframe class="yt-video" src="https://www.youtube-nocookie.com/embed/qPRjTFWdmew?si=AIS3dkYGvjXPnP36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div id="sesion-5" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fila" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <div>Sesión 5</div>
+                    <div>Diseño de propuesta</div>
+                    <div>27 de Octubre</div>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>La quinta sesión se llevará acabo el próximo 27 de Octubre de 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div id="sesion-6" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fila" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <div>Sesión 6</div>
+                    <div>Plan Docente</div>
+                    <div>24 de Noviembre</div>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>La sexta sesión se llevará acabo el próximo 24 de Noviembre de 2023</p>
+                  </div>
+                </div>
+              </div>
+              <div id="sesion-7" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fila" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <div>Sesión 7</div>
+                    <div>Presentación de propuesta de intervención</div>
+                    <div>26 de Enero</div>
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>La septima sesión se llevará acabo el próximo 26 de Enero de 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- ******************************* Trabajo final ******************************* -->
+        <div id="trabajo-final" class="row seccion">
+          <div class="col-1"></div>
+          <div class="col">
+            <h2>Trabajo final</h2>
+            <p>Para recibir constancia de participación (50 horas) se deberá contar con el 80% de asistencia y entregar un producto final que consistirá en el desarrollo completo de una de las estrategias revisadas y discutidas durante el seminario.</p>
+            <p>La entrega será a través de correo electrónico: <a href="mailto:seminariolabaa@gmail.com">seminariolabaa@gmail.com</a></p>
+            <p>El período de entrega del trabajo final será del 25 de noviembre del 2023 al 26 de enero del 2024 y se realizará una presentación de los proyectos.</p>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <!-- ******************************* Responsables ******************************* -->
+        <div id="responsables" class="row seccion">
+          <h2>Responsables</h2>
+          <div class="col-1"></div>
+          <div class="col-12 col-md">
+            <article>
+              <img loading="lazy" class="img-fluid responsable" src="http://drive.google.com/uc?export=view&id=1BJ5p9IpaojbX__8VgXKq1pIHBIt_FbwC" alt="Foto de Larisa">
+              <h4>Larisa Enríquez Vázquez</h4>
+              <p>Investigadora de tiempo completo, en la CUAIEED. Las líneas de investigación en las que actualmente se centra son: enseñanza abierta y a distancia, mega-universidades y educación no formal y aprendizaje autónomo.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md">
+            <article>
+              <img loading="lazy" class="img-fluid responsable" src="http://drive.google.com/uc?export=view&id=1hC8AYyDeNYfxX-BwSLRh5CivqQIeMPbv" alt="Foto de Myrna">
+              <h4>Myrna Hernandez Gutiérrez</h4>
+              <p>Académica de tiempo completo de la CUAIEED. Las líneas de investigación en las que actualmente se centra son: Aprendizaje colaborativo en ambientes virtuales y Diálogo y comunicación para el aprendizaje.</p>
+            </article>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </main>
+    <!-- #################################### Footer #################################### -->
+    <footer>
+      <div class="conteiner-fluid">
+      </div>
+    </footer>
+  </body>
+</html>

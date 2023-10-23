@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+  --amarillo: #dfc477;
+  --azul: #001B58;
+}
+
+/* ###################  Estrategia Mobile Last  ################### */
+/* ###########################  HEADER  ########################### */
+
+header{
+  background-color: var(--amarillo);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+#logo-header{
+  height: 50px;
+  margin-left: 5vw;
+}
+
+/* ***************************** Nav *****************************  */
+
+#list-secciones > li {
+  border-radius: 20px;
+}
+
+#list-secciones > li > a {
+  color: var(--azul);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#list-secciones > li:hover{
+  background: var(--azul);
+  transition: 0.6s;
+}
+
+#list-secciones > li:hover a {
+  color: #fff;
+  transition: 0.6s;
+}
+
+/* ********************* Despegable sesiones *********************  */
+
+.nav-link.dropdown-toggle {
+  margin-left: -15px;
+}
+
+#list-sesiones {
+  background-color: var(--azul);
+  padding: 10px 0;
+}
+
+#list-sesiones li {
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+}
+
+#list-sesiones li a {
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#list-sesiones li a:hover {
+  background-color: var(--amarillo);
+  color: var(--azul);
+  transition: 0.4s;
+}
+
+/* ############################  Body  ############################ */
+
+/* ***************************** Main ***************************** */
+
+main .seccion {
+  padding-top: 100px;
+}
+
+main .seccion h2 {
+  color: var(--azul);
+  font-size: 20pt;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+main .seccion p{
+  text-align: justify;
+}
+
+/* *************************** Portada ***************************  */
+
+#portada {
+  padding: 150px 0 0 0;
+  text-align: center;
+}
+
+#portada h1 {
+  color: var(--azul);
+  font-size: 25pt;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+#portada div {
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#fondo {
+  max-width: 500px;
+  width: 30vw;
+}
+
+#saa {
+  height: 50px;
+}
+
+/* ************************ Tabla sesiones ************************ */
+
+#sesiones .ultimo-p {
+  margin-bottom: -50px;
+}
+
+#programacion {
+  color: var(--azul);
+  font-size: 18pt;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+
+.accordion-item .accordion-header{
+  padding: 0;
+}
+
+button.accordion-button.fila {
+  background-color: var(--amarillo);
+  padding: 0;
+}
+
+.accordion-button.fila.collapsed::after {
+  margin: 10px;
+  padding: 10px;
+}
+
+.accordion-item .fila div {
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.accordion-item .fila div:nth-child(1) {
+  width: 15%;
+}
+
+.accordion-item .fila div:nth-child(2) {
+  width: 60%;
+}
+
+.accordion-item .fila div:nth-child(3) {
+  width: 25%;
+}
+
+div.accordion-body {
+  align-items: center;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10%;
+}
+
+div.accordion-body .yt-video {
+  height: 27.5vw;
+  margin-bottom: 16px;
+  width: 50vw;
+}
+
+div.accordion-body .doc-pdf {
+  height: 52vw;
+  width: 40vw;
+}
+
+/* ************************* Responsables ************************* */
+
+#responsables h2 {
+  text-align: center;
+}
+
+#responsables article {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#responsables img {
+  border-radius: 50px;
+  height: 300px;
+  object-fit: cover;
+  width: 200px;
+}
+
+#responsables h4 {
+  margin: 20px;
+}
+
+/* ##########################  FOOTER  ########################## */
+
+footer {
+  background-color: var(--amarillo);
+  height: 100px;
+}
+
+/* ################################################################ */
+/* #########################  RESPONSIVE  ######################### */
+/* ################################################################ */
+
+/* **************************** Laptop **************************** */
+
+@media (max-width: 1024px){
+  
+  /* ************************** Header ************************** */  
+  
+  div#offcanvasNavbar {
+    background-color: var(--amarillo);
+    width: 200px;
+  }
+
+  #offcanvasNavbarLabel {
+    color: var(--azul);
+    font-weight: bold;
+  }
+
+  #list-sesiones li {
+    padding: 0;
+  }
+
+  #logo-header{
+    margin-left: unset;
+  }
+  
+  /* *************************** Main *************************** */
+  
+  #fondo {
+    width: 45vw;
+  }
+}
+
+/* *************************** Tablets *************************** */
+
+@media (max-width: 768px){
+
+  /* ******************* Despegable sesiones ******************* */
+
+  /* ************************* Portada ************************* */
+  
+  #fondo {
+      width: 50vw;
+  }
+
+  /* ************************** Tabla ************************** */
+
+  .accordion-button.fila.collapsed {
+    font-size: 12px;
+  }
+
+  button.accordion-button.fila {
+    font-size: 12px;
+  }
+}
+
+/* ************************** Celulares ************************** */
+
+@media (max-width: 425px){
+  
+  /* ************************* Portada ************************* */
+
+  #saa {
+    height: 30px;
+  }
+
+  /* ************************** Main ************************** */
+
+  main .seccion p{
+    font-size: 14px;
+  }
+  
+  main .seccion li{
+    font-size: 14px;
+  }
+
+  /* ************************** Tabla ************************** */
+
+  div.accordion-body .yt-video {
+    height: 38.5vw;
+    width: 70vw;
+  }
+  
+  div.accordion-body .doc-pdf {
+    height: 91vw;
+    width: 70vw;
+  }
+
+  /* ********************** Responsables ********************** */
+
+  #responsables img {
+    width: 165px;
+    height: 250px;
+  }
+}
